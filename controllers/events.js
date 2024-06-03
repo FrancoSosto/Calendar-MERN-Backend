@@ -7,7 +7,7 @@ const getEvents = async (req, res = response) => {
 
 	return res.json({
 		ok: true,
-		msg: events,
+		events,
 	});
 };
 const createEvent = async (req, res = response) => {
@@ -19,7 +19,7 @@ const createEvent = async (req, res = response) => {
 
 		res.json({
 			ok: true,
-			even: savedEvent,
+			event: savedEvent,
 		});
 	} catch (error) {
 		console.log(error);
